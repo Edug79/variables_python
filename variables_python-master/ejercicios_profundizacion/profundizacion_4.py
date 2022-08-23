@@ -55,15 +55,20 @@ Nombre_completo_de_la_Madre = str(input())
 print('Nombre del Hijo/a:')
 Nombre_del_hije = str(input())
 
-
 nombre, apellido = Nombre_completo_del_Padre.split()
 
 nombre, apellido2 = Nombre_completo_de_la_Madre.split()
 
-separador = " "
+nombre_completo_del_hije = (Nombre_del_hije + " " + apellido + " " +apellido2) 
 
-print("Nombre completo del Hijo:")
-print(Nombre_del_hije + separador + apellido + separador +apellido2)
+nombre_completo_del_hije = nombre_completo_del_hije.title()
+
+print("Nombre completo del Hijo/a:")
+
+print(nombre_completo_del_hije)
+
+
+
 
 
 
